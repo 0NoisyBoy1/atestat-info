@@ -1,0 +1,1163 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cursul Razboiului</title>
+</head>
+
+<style>
+  .container {
+    position: relative;
+    font-family: Arial;
+  }
+
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidebar {
+      padding-top: 15px;
+    }
+
+    .sidebar a {
+      font-size: 18px;
+    }
+  }
+</style>
+
+<body>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Acasa</a>
+    <a href="despre.html">Despre</a>
+    <a href="cursul-razboiului.html">Cursul Razboiului</a>
+    <a href="impacte.html">Impacte</a>
+    <a href="urmari.html">Urmari</a>
+    <a href="quizz.html">Quizz</a>
+  </div>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Meniu</button>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    /* Set height of body and the document to 100% */
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial;
+    }
+
+    /* Style tab links */
+    .tablink {
+      background-color: #555;
+      color: white;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      width: 25%;
+    }
+
+    .tablink:hover {
+      background-color: #777;
+    }
+
+    .tabcontent {
+      color: black;
+      display: none;
+      padding: 100px 20px;
+      height: 100%;
+    }
+
+    #Izbucnirea razboiului in Europa(1939-1940) #Europa de vest(1940-1941) #Atacul Axei asupra URSS(1941) #Incetinirea Inaintarii Axei(1942-1943) #Frontul de est(1942-1943) #Aliatii castiga viteza(1943-1944) #Aliatii se apropie(1944) #Prabusirea Axei,
+    victoria aliatiilor(1944-1945)
+  </style>
+  <button class="tablink" onclick="openPage('Izbucnirea razboiului in Europa(1939-1940)', this, 'red')"
+    id="defaultOpen">Izbucnirea razboiului in Europa(1939-1940)</button>
+  <button class="tablink" onclick="openPage('Europa de vest(1940-1941)', this, 'red')">Europa de
+    vest(1940-1941)</button>
+  <button class="tablink" onclick="openPage('Atacul Axei asupra URSS(1941)', this, 'red')">Atacul Axei asupra
+    URSS(1941)</button>
+  <button class="tablink" onclick="openPage('Incetinirea Inaintarii Axei(1942-1943)', this, 'red')">Incetinirea
+    Inaintarii Axei(1942-1943)</button>
+  <button class="tablink" onclick="openPage('Frontul de est(1942-1943)', this, 'red')">Frontul de
+    est(1942-1943)</button>
+  <button class="tablink" onclick="openPage('Aliatii castiga viteza(1943-1944)', this, 'red')">Aliatii castiga
+    viteza(1943-1944)</button>
+  <button class="tablink" onclick="openPage('Aliatii se apropie(1944)', this, 'red')">Aliatii se apropie(1944)</button>
+  <button class="tablink" onclick="openPage('Prabusirea Axei, victoria aliatiilor(1944-1945)', this, 'red')">Prabusirea
+    Axei, victoria aliatiilor(1944-1945)</button>
+
+  <div id="Izbucnirea razboiului in Europa(1939-1940)" class="tabcontent">
+    <p>La 1 septembrie 1939, Germania a invadat Polonia sub pretextul că polonezii au efectuat o serie de operațiuni de
+      sabotaj împotriva țintelor germane din apropierea graniței. Două zile mai târziu, pe 3 septembrie, după ce un
+      ultimatum britanic adresat Germaniei, în care i se cerea să înceteze operațiunile militare, a fost ignorat,
+      Regatul Unit și Franța, urmate de Dominioanele independente ale Commonwealth-ului Britanic—Australia (3
+      septembrie), Canada (10 septembrie), Noua Zeelandă (3 septembrie), și Africa de Sud (6 septembrie)—au declarat
+      război Germaniei. Cu toate acestea, inițial alianța furnizat doar un sprijin militar direct limitat Poloniei,
+      constând dintr-o incursiune franceză minoră în Saarland. Aliații Occidentali au demarat și o blocadă navală a
+      Germaniei⁠, care avea drept scop slăbirea economiei țării și a efortului de război. Germania a răspuns prin
+      ordonarea războiului submarin împotriva tuturor navelor Aliaților, atât de război cât și comerciale, care mai
+      târziu avea să degenereze în Bătălia Atlanticului.Tancurile germane în apropiere de orașul Bydgoszcz, în timpul
+      Invaziei Poloniei, în septembrie 1939
+      Pe 17 septembrie 1939, după semnarea unui acord de încetare a focului cu Japonia, sovieticii au invadat Polonia
+      dinspre est. Armata poloneză a fost învinsă și Varșovia a capitulat⁠ germanilor la 27 septembrie, ultimele
+      elemente de rezistență capitulând la 6 octombrie. Polonia a fost împărțită între Germania⁠ și Uniunea Sovietică⁠,
+      Lituania și Slovacia primind și ele mici teritorii. După înfrângerea militară a Poloniei, rezistența poloneză a
+      stabilit un Stat Clandestin și o Armată de partizani. Aproximativ 100.000 de militari polonezi au fost evacuați în
+      România și în țările Baltice; mulți dintre acești soldați mai târziu aveau să lupte împotriva germanilor pe alte
+      teatre de război. Criptanaliștii polonezi anti-Enigma au fost și ei evacuați în Franța. Pe 6 octombrie, Hitler a
+      făcut o propunere publică de pace adresată Regatului Unit și Franței, dar a afirmat că viitorul Poloniei avea să
+      fie hotărât exclusiv de către Germania și Uniunea Sovietică. Chamberlain i-a respins-o pe 12 octombrie, declarând
+      că „experiența din trecut a arătat că nu se poate pune bază pe promisiunile actualului guvern german.” După
+      această respingere, Hitler a ordonat imediat o ofensivă împotriva Franței, dar vremea rea l-a obligat să o amâne
+      repetat până în primăvara anului 1940. Ofițeri germani și sovietici dând mâna după ce Germania Nazistă și Uniunea
+      Sovietică au anexat noi teritorii în Europa de Est, 1939 După semnarea Tratatului germano-sovietic de Prietenie,
+      Cooperare și Demarcație⁠, Uniunea Sovietică a obligat Țările Baltice—Estonia, Letonia și Lituania—să-i permită să
+      staționeze trupele sovietice în țările lor conform unor acorduri de „asistență reciprocă”. Finlanda a respins
+      revendicările teritoriale, ceea ce a determinat o invazie sovietică în noiembrie 1939. Războiul de Iarnă care a
+      urmat s-a încheiat în martie 1940 cu concesii finlandeze. Regatul Unit și Franța, tratând atacul sovietic asupra
+      Finlandei ca echivalent cu intrarea în război de partea Germanilor, a răspuns la invazia sovietică prin
+      sprijinirea excluderii URSS din
+      liga Națiunilor.În iunie 1940, Uniunea Sovietică a anexat cu forța Estonia, Letonia și Lituania⁠, și regiunile
+      românești disputate din Basarabia, Bucovina de Nord și Herța. Între timp, apropierea politică și cooperarea
+      economică sovieto-nazistă a încetinit treptat, și ambele state au început pregătirile pentru război.</p>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box
+      }
+
+      body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+      }
+
+      .mySlides {
+        display: none
+      }
+
+      img {
+        vertical-align: middle;
+      }
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active,
+      .dot:hover {
+        background-color: #717171;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+
+        to {
+          opacity: 1
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+
+        to {
+          opacity: 1
+        }
+      }
+
+      @media only screen and (max-width: 300px) {
+
+        .prev,
+        .next,
+        .text {
+          font-size: 11px
+        }
+      }
+    </style>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Polish_border_1939.jpg" style="width:100%">
+        <div class="text">Soldații Wehrmacht-ului german dărâmă punctul de trecere a frontierei între Polonia și Orașul
+          Liber Danzig, la 1 septembrie 1939</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bundesarchiv_Bild_146-1976-071-36%2C_Polen%2C_an_der_Brahe%2C_deutsche_Panzer.jpg"
+          style="width:100%">
+        <div class="text">Tancurile germane în apropiere de orașul Bydgoszcz, în timpul Invaziei Poloniei, în septembrie
+          1939</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Spotkanie_Sojusznik%C3%B3w.jpg"
+          style="width:100%">
+        <div class="text">Ofițeri germani și sovietici dând mâna după ce Germania Nazistă și Uniunea Sovietică au anexat
+          noi teritorii în Europa de Est, 1939</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+  </div>
+
+  <div id="Europa de vest(1940-1941)" class="tabcontent">
+
+    <p>În aprilie 1940, Germania a invadat Danemarca și Norvegia pentru a proteja transporturile de minereu de fier din
+      Suedia, pe care Aliații încercau să le întrerupă⁠ minând unilateral apele Norvegiei neutre. Danemarca a capitulat
+      după câteva ore și, în ciuda sprijinului Aliaților, care au reușit chiar să recucerească temporar importantul port
+      Narvik de la germani, Norvegia a fost cucerită în două luni. Nemulțumirile opiniei publice britanice pe marginea
+      campaniei din Norvegia⁠ au condus la înlocuirea prim-ministrului britanic, Neville Chamberlain, cu Winston
+      Churchill la 10 mai 1940.
+      Germania a lansat o ofensivă împotriva Franței și, aderând la Planul Manstein, a atacat și țările neutre Belgia,
+      Olanda și Luxemburg, la 10 mai 1940. În aceeași zi, forțele britanice au debarcat în Islanda⁠ și în Feroe⁠ pentru
+      a preîntâmpina o posibilă invazie germană a insulelor. SUA, în strânsă colaborare cu reprezentantul danez la
+      Washington, DC⁠, a fost de acord să protejeze Groenlanda⁠, adoptând cadrul politic pentru înființarea oficială de
+      baze militare în aprilie 1941. Țările de Jos și Belgia au fost invadate în câteva zile și, respectiv, săptămâni,
+      folosind tactici blitzkrieg. Linia franceză fortificată Maginot și corpul principal al forțelor aliate care
+      intraseră în Belgia au fost eludate printr-o mișcare de flancare prin regiunea împădurită Ardeni, eronat percepută
+      de către planificatorii aliați ca o barieră naturală impenetrabilă împotriva blindatelor. Ca urmare, cea mai mare
+      parte din armatele aliate s-au găsit prinse într-o încercuire și au fost învinse. Majoritatea au fost luați
+      prizonieri, în
+      timp ce peste 300.000, mai ales englezi și francezi, au fost evacuați de pe continent la Dunkerque de la începutul
+      lunii iunie, după ce își abandonaseră aproape tot echipamentul.
+      La 10 iunie, Italia a invadat Franța, declarând război atât Franței cât și Regatului Unit. Parisul a scăzut în
+      mâinile germanilor la 14 iunie și opt zile mai târziu Franța a semnat un armistițiu cu Germania și a fost în
+      curând împărțită între zonele de ocupație germană și italiană⁠, și o rămășiță⁠ neocupată guvernată de Regimul de
+      la Vichy, care, deși, oficial, neutru, s-a aliniat, în general, cu Germania. Franța și-a păstrat flota dar
+      britanicii se temeau că ar putea cădea în mâinile germanilor și au atacat-o pe 3 iulie.
+      Bătălia Angliei a început la începutul lunii iulie când Luftwaffe a atacat transporturile maritime și porturile⁠.
+      Pe 19 iulie, Hitler s-a oferit din nou public să pună capăt războiului, spunând că el nu are nicio dorință de a
+      distruge Imperiul Britanic. Regatul Unit a respins ultimatumul. Principala campanie germană de superioritate
+      aeriană a început în luna august, dar nu a reușit să ducă la înfrângerea RAF Fighter Command⁠, și invazia propusă
+      a fost amânată pe termen nelimitat pe 17 septembrie. Bombardamentele strategice ofensive germane s-au intensificat
+      sub forma unor atacuri de noapte asupra Londrei și a altor orașe în The Blitz, dar în mare parte nu au reușit să
+      întrerupă efortul de război britanic.
+      Folosind recent-capturatele porturi franceze, Marina Germană a obținut unele succese împotriva unei Royal Navy
+      suprarăspândite, folosind U-booturi împotriva transporturilor britanice din Atlantic. Britanicii au obținut o
+      victorie semnificativă la 27 mai 1941, prin scufundarea cuirasatului german Bismarck⁠. Poate cel mai important, în
+      timpul Bătăliei Angliei, Royal Air Force a rezistat cu succes asaltului Luftwaffe, și campania germană de
+      bombardamente s-a încheiat în mare parte în mai 1941.
+      În toată această perioadă, Statele Unite ale Americii, oficial neutre, au luat măsuri pentru a ajuta China și
+      Aliații occidentali. În noiembrie 1939, Legea Neutralității⁠ din SUA a fost modificată pentru a permite achiziții
+      „cash and carry” din partea Aliaților. În 1940, în urma ocupării germane a Parisului, dimensiunea Marinei Statelor
+      Unite a fost crescută în mod semnificativ⁠. În septembrie, Statele Unite au mai convenit să schimbe distrugătoare
+      americane pentru baze britanice⁠. În continuare, până mult în 1941, o mare majoritate a publicului american
+      continua să se opună oricărei intervenții militare directe în conflict.
+      Deși promisese că va menține Statele Unite în afara războiului, Roosevelt a luat totuși măsuri concrete pentru a
+      se pregăti pentru război. În decembrie 1940, l-a acuzat pe Hitler că pune la cale cucerirea lumii și a declarat
+      negocierile inutile, cerând ca SUA să devină un „arsenal al democrației⁠” și a promovat adoptarea legii de
+      împrumut și închiriere pentru a sprijini efortul de război britanic. În ianuarie 1941, au fost demarate discuții
+      secrete la nivel înalt cu britanicii pentru a determina cum să fie învinsă Germania dacă SUA vor intra în război.
+      Ei au hotărât o serie de politici ofensive, între care o ofensivă aeriană, „eliminarea timpurie” a Italiei,
+      raiduri, susținerea grupărilor de rezistență, și capturarea unor poziții care să faciliteze lansarea de ofensive
+      împotriva Germaniei.
+      La sfârșitul lunii septembrie 1940, Pactul Tripartit reunea Japonia, Italia și Germania, formalizând Puterile
+      Axei. Pactul Tripartit stipula că orice țară, cu excepția Uniunii Sovietice, care nu se afla în război, care atacă
+      oricare putere a Axei va fi obligată să lupte împotriva tuturor celor trei. Axa s-a extins în noiembrie 1940, când
+      au aderat Ungaria, Slovacia și România. România avea să aducă o contribuție majoră (ca și Ungaria) la războiul
+      Axei împotriva URSS, parțial pentru a recuceri teritoriile cedate URSS, parțial pentru a urma dorința
+      conducătorului Ion Antonescu de a combate comunismul.</p>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+      }
+
+      .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+      }
+
+      .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+      }
+
+      .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Maginot_Line_ln-en_svg.svg/220px-Maginot_Line_ln-en_svg.svg.png"
+        alt="Snow" style="width:50%;">
+      <div class="centered" style="color:Black;">Harta Liniei Maginot franceze</div>
+    </div>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/View_from_St_Paul%27s_Cathedral_after_the_Blitz.jpg/220px-View_from_St_Paul%27s_Cathedral_after_the_Blitz.jpg"
+        alt="Snow" style="width:50%;">
+      <div class="centered" style="color:Black;">Vedere din Londra după Blitzul german, 29 decembrie 1940</div>
+    </div>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Heinkel_He_111_during_the_Battle_of_Britain.jpg/220px-Heinkel_He_111_during_the_Battle_of_Britain.jpg"
+        alt="Snow" style="width:50%;">
+      <div class="centered" style="color:Black;">Bombardiere germane ale Luftwaffe modelul He 111⁠ în timpul Bătăliei
+        Angliei</div>
+    </div>
+
+  </div>
+
+  <div id="Atacul Axei asupra URSS(1941)" class="tabcontent">
+
+    <p>Cum situația din Europa și Asia era relativ stabilă, Germania, Japonia și Uniunea Sovietică făceau pregătiri. Cum
+      sovieticii se fereau să escaladeze tensiunile cu Germania și japonezii puneau la cale să profite de războiul
+      european pentru a acapara posesiunile europene bogate în resurse din Asia de Sud-Est, cele două puteri au semnat
+      pactul de neutralitate sovieto–japonez în aprilie 1941. Prin contrast, germanii făceau în mod constant pregătiri
+      pentru un atac asupra Uniunii Sovietice, masând trupe la granița sovietică.
+
+      Hitler credea că refuzul Regatului Unit de a pune capăt războiului se bazează pe speranța că Statele Unite și
+      Uniunea Sovietică vor intra, mai devreme sau mai târziu, în război împotriva Germaniei. Prin urmare, ei au hotărât
+      să încerce să consolideze relațiile germaniei cu sovieticii, sau, dacă aceasta nu reușește, să-i atace și să-i
+      elimine ca factor. În noiembrie 1940, au avut loc negocieri⁠ pentru a stabili dacă Uniunea Sovietică va adera la
+      Pactul Tripartit. Sovieticii au arătat un oarecare interes, dar au cerut concesii din partea Finlandei, Bulgariei,
+      Turciei și Japoniei, ceea ce Germania a considerat inacceptabil. La 18 decembrie 1940, Hitler a emis directiva de
+      a se pregăti o invazie a Uniunii Sovietice.
+
+      La 22 iunie 1941, Germania, susținută de Italia și România, au invadat Uniunea Sovietică în Operațiunea
+      Barbarossa, Germania acuzându-i pe sovietici de complot împotriva ei. Lor li s-au alăturat în scurt timp Finlanda
+      și Ungaria. obiectivele principale ale acestei ofensive-surpriză ofensive au fost regiunile baltice, Moscova și
+      Ucraina, având scopul final⁠ de a pune capăt campaniei din 1941 în apropiere de linia Arhanghelsk-Astrahan, de la
+      Marea Caspică la Marea Albă. Obiectivele lui Hitler erau fost eliminarea Uniunii Sovietice ca putere militară,
+      eradicarea comunismului, generarea de Lebensraum („spațiu de trai”)[125] prin deposedarea populației autohtone⁠ și
+      garantarea accesului la resurse strategice necesare pentru a învinge restul de rivali rămași ai Germaniei.
+
+      Deși Armata Roșie se pregătea înainte de război pentru o contraofensivă strategică, Barbarossa a obligat
+      comandamentul suprem sovietic să adopte o strategie defensivă⁠. În timpul verii, Axa a făcut progrese
+      semnificative în teritoriul sovietic, provocând imense pierderi umane și materiale. De la mijlocul lunii august,
+      cu toate acestea, Înaltul Comandament german a hotărât să suspende ofensiva Grupul de Armate Centru, considerabil
+      epuizat, și să redirecționeze Grupul 2 Panzer⁠ pentru a consolida înaintarea trupelor spre Ucraina centrală și
+      Leningrad. Ofensiva de la Kiev a fost foarte reușită, soldându-se cu încercuirea și eliminarea a patru armate
+      sovietice, și a făcut posibilă în continuare înaintarea în Crimeea și în Ucraina orientală, mai dezvoltată
+      industrial (prima bătălie de la Harkov).
+
+      Deturnarea a trei sferturi din trupele Axei și majoritatea forțelor sale aeriene din Franța și Mediterana centrală
+      pe Frontul de Est a determinat Regatul Unit să-și reanalizeze strategia de ansamblu⁠. În luna iulie, Regatul Unit
+      și Uniunea Sovietică au format o alianță militară împotriva Germaniei. Britanicii și sovieticii au invadat Iranul⁠
+      pentru a asigura Coridorul Persan⁠ și câmpurile petrolifere din Iran. În luna august, Regatul Unit și Statele
+      Unite ale Americii au emis în comun Carta Atlanticului.
+      Până în octombrie, obiectivele operaționale ale Axei în Ucraina și în regiunea Mării Baltice au fost atinse, mai
+      rămânând doar asediile Leningradului și Sevastopolului. O importantă ofensivă împotriva Moscovei a fost reînnoită;
+      după două luni de lupte înverșunate pe o vreme din ce în ce mai grea, armata germană a ajuns aproape de suburbiile
+      Moscovei, unde trupele extenuate au fost obligate să-și suspende ofensiva. Fortele Axei au realizat mari câștiguri
+      teritoriale, dar campania lor nu reușise să-și atingă obiectivele principale: două orașe-cheie rămăseseră în
+      mâinile sovieticilor, capacitatea de rezistență a URSS nu fusese ruptă, iar Uniunea Sovietică a păstrat o mare
+      parte din potențialul său militar. Faza de blitzkrieg a războiului în Europa se încheiase.
+
+      Până la începutul lunii decembrie, rezervele⁠ proaspăt mobilizate au permis sovieticilor să ajungă la echilibru
+      numeric cu Axa. Împreună cu informațiile obținute, care au stabilit că un număr minim de trupe sovietice din est
+      ar fi suficiente pentru a descuraja orice atac al armatei japoneze Kwantung⁠, au permis sovieticilor să înceapă o
+      masivă contra-ofensivă, care s-a declanșat la 5 decembrie de-a lungul întregului front și împingând trupele </p>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+      }
+
+      .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+      }
+
+      .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+      }
+
+      .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+
+    <div class="container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Second_world_war_europe_animation_small.gif"
+        style="width:70%;">
+      <div class="bottom-right" style="color:Black;">Hartă animată a teatrului European de operațiuni al celui de al
+        Doilea Război Mondial, 1939-1945 —
+        Roșu: Aliații Occidentali și Uniunea Sovietică, după 1941; Verde: Uniunea Sovietică înainte de anul 1941;
+        Albastru: Puterile Axei</div>
+    </div>
+  </div>
+
+  <div id="Incetinirea Inaintarii Axei(1942-1943)" class="tabcontent">
+
+    <p>În ianuarie 1942, Cei Patru Mari Aliați (Statele Unite, Regatul Unit, Uniunea Sovietică și China) și alte 22 de
+      guverne mici sau în exil au emis Declarația Națiunilor Unite⁠, prin care au reafirmat Carta Atlanticului, și au
+      căzut de acord să nu semneze pace separată⁠ cu puterile Axei.
+
+      În 1942, oficialii Aliați au dezbătut strategia de ansamblu⁠ pe care să o urmeze. Toate au fost de acord că
+      înfrângerea Germaniei este obiectivul principal. Americanii au favorizat un atac direct pe scară largă⁠ împotriva
+      Germaniei, prin Franța. Sovieticii cereau și ei un al doilea front. Britanicii, pe de altă parte, susțineau că
+      operațiunile militare ar trebui să vizeze zonele periferice pentru a măcina puterea germană, ceea ce ar duce la
+      demoralizare, și la susținerea mișcarilor de rezistență. Germania ar fi fost supusă unei grele campanie de
+      bombardamente. O ofensivă împotriva Germaniei ar urma apoi să fie lansată în primul rând cu blindate ale Aliaților
+      fără a utiliza armate mari.[168] În cele din urmă, britanicii i-au convins pe americani că o debarcare în Franța
+      este imposibilă la acea dată, și că ar trebui în schimb să se concentreze pe îndepărtarea Axei din Africa de Nord.
+
+      La Conferința de la Casablanca de la începutul anului 1943, Aliații și-au reiterat afirmațiile din Declarația
+      Națiunilor Unite din 1942, și au cerut capitularea necondiționată a dușmanilor lor. Britanicii și americanii au
+      convenit să continue să ia inițiativa în Mediterana prin invadarea Siciliei pentru a asigura rutele de
+      aprovizionare prin acea mare. Deși britanicii cereau mai multe operațiuni în Balcani pentru a aduce Turcia în
+      război, în mai 1943, americanii au obțintut de la aceștia angajamentul de a limita operațiunile aliate din
+      Mediterana la o invazie a Italiei și de a invada Franța în 1944.
+    </p>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+      }
+
+      .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+      }
+
+      .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+      }
+
+      .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Casablanca-Conference.jpg/220px-Casablanca-Conference.jpg"
+        style="width:50%;">
+      <div class="centered" style="color:Black;">Așezați la Conferința de la Casablanca: președintele SUA, Franklin D.
+        Roosevelt și prim-ministrul britanic Winston Churchill, ianuarie 1943</div>
+    </div>
+  </div>
+
+  <div id="Frontul de est(1942-1943)" class="tabcontent">
+
+    <p>În ciuda pierderilor considerabile, la începutul anului 1942, Germania și aliații săi au oprit ofensiva Sovietică
+      în Rusia centrală și meridională, păstrând cele mai multe câștiguri teritoriale realizate în anul precedent. În
+      mai, germanii au învins ofensiva sovietică din Peninsula Kerci⁠ și de la Harkov, și apoi au lansat principala
+      ofensivă de vară împotriva sudului Rusiei, în iunie 1942, pentru a profita de câmpurile petrolifere din Caucaz⁠ și
+      a ocupa stepa Kubanului, menținând în același timp pozițiile din nordul și centrul frontului. Germanii au divizat
+      Grupul de Armate Sud în două grupuri: Grupul de Armate A⁠(d) a înaintat spre Donul inferior și a lovit spre
+      sud-est către Caucaz, în timp ce Grupul de Armate B s-a îndreptat spre Volga. Sovieticii au hotărât să se apere la
+      Stalingrad, pe Volga.
+
+      Până la mijlocul lunii noiembrie, germanii aproape cuceriseră Stalingradul în lupte grele de stradă⁠, atunci când
+      sovieticii își începeau a doua contraofensivă de iarnă, începând cu o încercuire a forțelor germane de la
+      Stalingrad și un atac asupra ieșindului Rjev din apropiere de Moscova, deși acesta din urmă a eșuat dezastruos.
+      Până la începutul lunii februarie 1943, Armata Germană suferise pierderi enorme; trupele germane de la Stalingrad
+      a fost obligate să capituleze, și prima linie a fost împinsă înapoi, dincolo de poziția sa dinainte de ofensiva de
+      vară. La mijlocul lunii februarie, după ce înaintarea sovietică a pierdut din impuls, germanii au lansat un alt
+      atac la Harkov, creând un ieșind în prima linie în preajma orașului rusesc Kursk.</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+      }
+
+      .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+      }
+
+      .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+      }
+
+      .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Marines_rest_in_the_field_on_Guadalcanal.jpg/220px-Marines_rest_in_the_field_on_Guadalcanal.jpg"
+        style="width:50%;">
+      <div class="centered" style="color:Black;">Pușcași marini americani în Campania Guadalcanal, pe teatrul de
+        operațiuni din Pacific⁠, 1942</div>
+    </div>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/RIAN_archive_44732_Soviet_soldiers_attack_house.jpg/300px-RIAN_archive_44732_Soviet_soldiers_attack_house.jpg"
+        style="width:50%;">
+      <div class="centered" style="color:White;">Soldați ai Armatei Roșii în contraatac, în timpul bătăliei de la
+        Stalingrad, februarie 1943
+      </div>
+    </div>
+
+  </div>
+
+  <div id="Aliatii castiga viteza(1943-1944)" class="tabcontent">
+
+    <p>După Campania Guadalcanal, Aliații au inițiat mai multe operațiuni împotriva Japoniei în Pacific. În mai 1943,
+      forțe canadiene și americane au fost trimise pentru a elimina forțele Japoneze din Insulele Aleutine⁠. Curând după
+      aceea, cu sprijin din partea forțelor australiene și neozeelandeze, SUA a început operațiuni majore pentru a izola
+      Rabaulul prin cucerirea insulelor din jur⁠(d), și penetrarea perimetrului japonez din Pacificul Central în
+      Insulele Gilbert și Marshall⁠. Până la sfârșitul lunii martie 1944, Aliații au realizat ambele obiective, și au și
+      neutralizat marea bază japoneză de la Truk⁠ din Insulele Caroline. În aprilie, Aliații au lansat o operațiune de
+      recucerire a vestului Noii Guinei⁠. În Uniunea Sovietică, și germanii și sovieticii au petrecut primăvara și
+      începutul verii anului 1943 pregătindu-se de mari ofensive în Rusia centrală. La 4 iulie 1943, Germania a atacat
+      forțele sovietice în jurul ieșindului Kursk. Într-o săptămână, forțele germane s-au epuizat împotriva
+      fortificațiilor
+      sovietice profund structurate și foarte bine construite și, pentru prima dată în război, Hitler a anulat
+      operațiunea înainte ca aceasta să își îndeplinească obiectivele tactice sau operaționale. Această decizie a fost
+      parțial afectată de invazia Siciliei de către Aliații occidentali, lansată la 9 iulie, care, combinată cu
+      eșecurile italiene anterioare, au dus la înlăturarea și arestarea lui Mussolini mai târziu în acea lună. În iulie
+      1943, britanicii au incendiat Hamburgul⁠ ucigând peste 40.000 de oameni.
+
+      La 12 iulie 1943, sovieticii au lansat propria lor contraofensivă, risipind astfel orice șansă de victorie germană
+      sau chiar impas în est. Victoria sovietică de la Kursk a marcat sfârșitul superiorității germane, oferind Uniunii
+      Sovietice inițiativa pe Frontul de Est. Germanii au încercat să-și stabilizeze frontul de est de-a lungul liniei
+      Panther-Wotan fortificate în grabă, dar sovieticii au penetrat-o la Smolensk și prin Ofensiva Niprului Inferior.
+
+      La 3 septembrie 1943, Aliații au invadat Italia continentală, după care Italia a semnat armistițiul cu Aliații.
+      Germania a răspuns prin dezarmarea forțelor italiene, preluând controlul militar asupra unor zone din Italia, și
+      de creând o serie de linii defensive. Forțele speciale germane l-au salvat apoi pe Mussolini, care curând a
+      proclamat un nou stat-clientelar în Italia sub ocupație germană, numit Republica Socială Italiană, provocând un
+      Război Civil Italian⁠. Aliații Occidentali au luptat prin mai multe linii până la atingerea principalei linii
+      defensive germane⁠ la mijlocul lunii noiembrie.
+      Operațiunile germane din Atlantic au avut și ele de suferit. În mai 1943, după ce contramăsurile Aliaților au
+      devenit efective⁠, având ca rezultat considerabile pierderi de submarine germane, campania navală din Atlantic a
+      germanilor a trebuit să fie suspendată. În noiembrie 1943, Franklin D. Roosevelt și Winston Churchill s-a întâlnit
+      cu Chiang Kai-shek la Cairo și apoi cu Iosif Stalin la Teheran. Prima conferință a hotărât retrocedarea postbelică
+      a teritoriului japonez și a facilitat planificarea militară a Campaniei din Birmania⁠ cea de a doua a cuprins
+      acordul că Aliații Occidentali vor invada Europa în 1944 și că Uniunea Sovietică va declara război Japoniei în
+      termen de trei luni de la înfrângerea Germaniei.
+
+      Din noiembrie 1943, din timpul celor șapte săptămâni ai bătăliei de la Changde⁠, Chinezii au forțat Japonia să
+      ducă un costisitor război de uzură, așteptând sprijin aliat. În ianuarie 1944, Aliații au lansat o serie de
+      atacuri în Italia împotriva liniei de la Monte Cassino și a încercat să-l înconjoare prin debarcările de la
+      Anzio⁠. Până la sfârșitul lunii ianuarie, o mare ofensivă sovietică a îndepărtat trupele germane din regiunea
+      Leningrad, încheind cel mai lung și cel mai mortal asediu din istorie⁠.
+
+      Ofensiva Sovietică ce a urmat⁠ a fost oprită la frontiera antebelică a Estoniei de Grupul de Armate Nord german
+      sprijinit de estoni⁠ în speranța de restabilirii independenței naționale⁠. Această întârziere a încetinit
+      operațiunile sovietice ulterioare din regiunea Mării Baltice. Către sfârșitul lunii mai 1944, sovieticii au
+      eliberat Crimeea, au îndepărtat în mare măsură armatele Axei din Ucraina, și au făcut incursiuni în România, care
+      au fost respinse de trupele Axei. Ofensiva Aliaților din Italia a reușit și, cu costul permiterii retragerii mai
+      multor divizii germane, pe 4 iunie, a cucerit Roma.
+
+      Aliații au avut succese în Asia continentală. În martie 1944, Japonezii au lansat prima din cele două invazii, o
+      operațiune împotriva pozițiilor britanice de la Assam, India⁠ și în curând au asediat pozițiile Commonwealth-ului
+      la Imphal⁠ și Kohima⁠. În mai 1944, forțele britanice au organizat o contraofensivă, care a împins trupele
+      japoneze înapoi în Birmania, iar forțele Chineze care invadaseră nordul Birmaniei⁠ la sfârșitul anului 1943 au
+      asediat trupele japoneze în Myitkyina⁠. A doua invazie japoneză⁠ a Chinei avea ca scop distrugerea principalelor
+      forțe de luptă ale Chinei, asigurarea căilor ferate între teritoriile ocupate de japonezi și capturarea
+      aerodromurilor aliate. Până în luna iunie, japonezii au cucerit provincia Henan și au început un nou atac asupra
+      Changshaului⁠ în provincia Hunan.</p>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+      }
+
+      .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+      }
+
+      .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+      }
+
+      .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Cairo_conference.jpg/220px-Cairo_conference.jpg"
+        style="width:50%;">
+      <div class="centered" style="color:Black;">Liderii Aliaților de pe teatrul din Asia și Pacific: Generalul Chiang
+        Kai-shek, Franklin D. Roosevelt și Winston Churchill la întâlnirea de la Conferința de la Cairo, 25 noiembrie
+        1943</div>
+    </div>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Kursk_Soviet_machineguns.JPG/220px-Kursk_Soviet_machineguns.JPG"
+        style="width:50%;">
+      <div class="centered" style="color:Black;">Armata roșie, în timpul Bătăliei de la Kursk, cea mai mare bătălie
+        cisternă s-a luptat vreodată.</div>
+    </div>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/SBD_VB-16_over_USS_Washington_1943.jpg/220px-SBD_VB-16_over_USS_Washington_1943.jpg"
+        style="width:50%;">
+      <div class="centered" style="color:Black;">Avion SBD Dauntless⁠ al Marinei SUA zboară în patrulare deasupra USS
+        Washington și USS Lexington în campania din Insulele Gilbert și Marshall, 1943</div>
+    </div>
+  </div>
+
+  <div id="Aliatii se apropie(1944)" class="tabcontent">
+
+    <p>La 6 iunie 1944 (cunoscută sub numele de Ziua Z), după trei ani de presiuni sovietice, Aliații au invadat nordul
+      Franței. După realocarea mai multor divizii aliate din Italia, ei au atacat și sudul Franței. Aceste debarcări au
+      reușit și au dus la înfrângerea unităților Armatei Germane⁠ din Franța. Parisul a fost eliberat de rezistență
+      locală asistată de Forțele Franceze Libere⁠, ambele conduse de generalul Charles de Gaulle, pe 25 august și
+      Aliații Occidentali au continuat să împingă înapoi forțele germane în Europa de Vest în a doua parte a anului. O
+      încercare de a avansa în nordul Germaniei, efectuată printr-o operațiune aeriană majoră din Țările de Jos nu a
+      reușit. După aceea, Aliații Occidentali au împins încet în Germania, dar nu au reușit să traverseze râul Rur
+      într-o mare ofensivă. Și în Italia, Aliații au încetinit ca urmare a întâlnirii ultimei linii defensive majore
+      germane⁠.
+
+      Pe 22 iunie, sovieticii au lansat o ofensivă strategică în Belarus („Operațiunea Bagration”) care a distrus
+      aproape complet Grupul de Armate Centru. Curând după aceea o altă ofensivă sovietică strategică⁠ a obligat trupele
+      germane să se retragă din Ucraina de Vest și Polonia de Est. Înaintarea sovietică a determinat forțele de
+      rezistență din Polonia să declanșeze mai multe revolte împotriva ocupației germane. Cu toate acestea, cea mai mare
+      dintre acestea, cea de la Varșovia, unde soldații germani au masacrat 200.000 de civili, și o revoluție națională
+      în Slovacia, nu au primit sprijin sovietic și au fost ulterior suprimate de către germani. Ofensiva strategică a
+      Armatei Roșii în estul României a izolat și a distrus considerabilele trupele germane de acolo⁠ și a declanșat o
+      lovitură de stat reușită în România și apoi o alta în Bulgaria⁠, care s-au soldat cu trecerea celor două țări de
+      partea Aliaților.
+      În septembrie 1944, trupele sovietice au avansat in Iugoslavia și au forțat retragerea rapidă a Grupurilor de
+      Armate E⁠ și F⁠ în Grecia⁠, Albania și Iugoslavia pentru a le salva de la a fi încercuite. În acest moment,
+      partizanii sub conducerea mareșalului comunist Iosip Broz Tito, care duceau încă din 1941 o campanie de gherilă
+      din ce în ce mai eficientă împotriva ocupației, controlau o mare parte din teritoriul Iugoslaviei și erau angajate
+      în întârzierea eforturilor împotriva forțelor germane din sud. În nordul Serbiei, Armata Roșie, cu susținere
+      limitată din partea bulgarilor, a fost asistată de partizani într-un efort comun de eliberare a capitalei
+      Belgrad⁠, la 20 octombrie. Câteva zile mai târziu, cu sprijinul noului aliat din România, sovieticii au lansat un
+      atac masiv⁠ împotriva Ungariei ocupate de germani⁠, care a durat până la căderea Budapestei în februarie 1945.
+      Spre deosebire de impresionantele victorii sovietice din Balcani, rezistența finlandeză împotriva ofensivei
+      sovietice din istmul Karelia i-a împiedicat pe sovietici să ocupare Finlanda și au condus la un armistițiu
+      sovieto-finlandez în condiții relativ favorabile, deși Finlanda a fost nevoită să lupte apoi împotriva fostului
+      său aliat.
+
+      La începutul lunii iulie 1944, forțele Commonwealth-ului în Asia de Sud-Est au respins asedile japoneze din Assam,
+      împingându-i până la râul Chindwin⁠ în timp ce chinezii au capturat Myitkyina. În China, japonezii au avut mai
+      multe succese, cucerind în cele din urmă Changsha la mijlocul lunii iunie și orașul Hengyang⁠ până la începutul
+      lunii august. Curând după aceea, au invadat provincia Guangxi, câștigând bătălii importante împotriva forțelor
+      chineze la Guilin și Liuzhou⁠ către sfârșitul lunii noiembrie și făcând joncțiunea între forțele lor în China și
+      Indochina până la jumătatea lunii decembrie.
+
+      În Pacific, forțele americane au continuat să preseze din nou perimetrul japonez. La mijlocul lunii iunie 1944,
+      și-au început ofensiva împotriva Insulelor Mariane și Palau⁠, și au învins decisiv forțele japoneze în bătălia din
+      Marea Filipinelor. Aceste înfrângeri au dus la demisia prim-ministrului japonez, Hideki Tōjō, și au adus Statelor
+      Unite baze aeriene pentru a lansa atacuri intensive cu bombardiere grele asupra Arhipelagului Japonez. La
+      sfârșitul lunii octombrie, forțele americane au invadat insula filipineză Leyte⁠; curând după aceea, forțele
+      navale aliate au obținut o altă mare victorie în bătălia din Golful Leyte, una dintre cele mai mari bătălii navale
+      din istorie.</p>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+      }
+
+      .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+      }
+
+      .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+      }
+
+      .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Approaching_Omaha.jpg/220px-Approaching_Omaha.jpg"
+        style="width:50%;">
+      <div class="centered" style="color:White;">Trupele americane se apropie de Plaja Omaha, în timpul Invaziei
+        Normandieia în Ziua Z, 6 iunie 1944</div>
+    </div>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Bundesarchiv_Bild_183-97906%2C_Warschauer_Aufstand%2C_Stra%C3%9Fenkampf.jpg/220px-Bundesarchiv_Bild_183-97906%2C_Warschauer_Aufstand%2C_Stra%C3%9Fenkampf.jpg"
+        style="width:50%;">
+      <div class="centered" style="color:White;">Soldați SS germani din Brigada Dirlewanger⁠, însărcinate cu suprimarea
+        Revoltei din Varșovia, împotriva ocupației naziste, august 1944</div>
+    </div>
+
+  </div>
+
+  <div id="Prabusirea Axei, victoria aliatiilor(1944-1945)" class="tabcontent">
+
+    <p>La 16 decembrie 1944, Germania a făcut o ultimă încercare de a ține Frontul de Vest folosind cele mai multe
+      dintre rezervele rămase pentru a lansa o masivă contra-ofensivă în Ardeni încercând să-i despartă pe Aliații
+      Occidentali, să încercuiască porțiuni mari din trupele acestora și să captureze principalul lor port de
+      aprovizionare, Anvers, în scopul de a putea negocia o pace. Prin ianuarie, ofensiva a fost respinsă fără a-și
+      îndeplini obiectivele strategice.[262] În Italia, Aliații Occidentali au ajuns la un impas cu linia germană de
+      apărare. La mijlocul lunii ianuarie 1945, rușii și polonezii au atacat în Polonia, împingând de la Vistula până la
+      Odra în Germania, și au invadat Prusia Orientală⁠. Pe 4 februarie, liderii SUA, Regatului Unit și uniunii
+      Sovietice s-au întâlnit la conferința de la Ialta. Ei au convenit asupra ocupației Germaniei după război, și
+      asupra momentului când Uniunea Sovietică va intra în război și împotriva Japoniei.
+
+      În februarie, sovieticii au pătruns în Silezia⁠ și Pomerania⁠, în timp ce Aliații Occidentali au intrat în
+      Germania de vest și au închis Rinul. Prin martie, Aliații au traversat Rinul la nord⁠ și sud de Ruhr⁠, încercuind
+      Grupul de Armate B German⁠, în timp ce sovieticii înaintau către Viena. La începutul lunii aprilie, Aliații
+      Occidentali au început să înainteze și în Italia⁠ și au înaintat rapid prin vestul Germaniei, în timp ce forțele
+      sovietice și poloneze au luat cu asalt Berlinul la sfârșitul lunii aprilie. Forțele americane și sovietice s-au
+      întâlnit la râul Elba⁠(d) pe 25 aprilie. Pe 30 aprilie 1945, a fost capturat Reichstagul, ceea ce a însemnat
+      înfrângerea militară a Germaniei Naziste.
+
+      În această perioadă au avut loc mai multe schimbări la conducerea țărilor. Pe 12 aprilie, președintele Roosevelt a
+      murit și a fost înlocuit de Harry Truman. Benito Mussolini a fost ucis de partizanii italieni pe 28 aprilie. Două
+      zile mai târziu, Hitler s-a sinucis⁠ și locul lui a fost luat de de amiralul Karl Dönitz.
+
+      Forțele germane au capitulat în Italia pe 29 aprilie. Capitularea totală și necondiționată a fost semnată pe 7 mai
+      și a intrat în vigoare înaintea sfârșitului zilei de 8 mai⁠. Grupul de Armate Centru German a rezistat în Praga
+      până la 11 mai.
+
+      Pe Teatrul din Pacific, forțele americane, însoțite de forțele Comunității Filipineze⁠ au înaintat în Filipine⁠,
+      cucerind Leyte⁠ până la sfârșitul lunii aprilie 1945. Ele au debarcat pe Luzon⁠ în ianuarie 1945 și au recucerit
+      Manila⁠ în martie, după o luptă care a transformat orașul în ruine. Lupta a continuat pe Luzon, pe Mindanao⁠, și
+      pe alte insule din Filipine până la sfârșitul războiului⁠. Între timp, Forțele Aeriene ale Statelor Unite⁠ (USAAF)
+      distrugeau orașe strategice și populate din Japonia, într-un efort de a distruge industria de război japoneză și
+      moralul civililor. În noaptea de 9-10 martie, bombardiere B-29 ale USAAF au lovit Tokyo⁠ cu mii de bombe
+      incendiare⁠, care au ucis peste 100.000 de civili și au distrus 42 de mile pătrate în doar câteva ore. În
+      următoarele cinci luni, USAAF a incendiat în total 67 de orașe japoneze⁠, ucigând 393.000 de civili și distrugând
+      65% din zonele construite.
+
+      Ministrul de externe Mamoru Shigemitsu semnează actul capitulării Japoniei la bordul USS Missouri, 2 septembrie
+      1945
+      În mai 1945, trupele australiene au debarcat în Borneo⁠, înaintând peste terenurile petrolifere de acolo. Forțele
+      britanice, americane și chineze au învins forțele japoneze în nordul Birmaniei⁠ în martie, iar britanicii au
+      împins mai departe, ajungând la Rangoon pe 3 mai. Forțele chineze au început să contraatace în bătălia Hunanului
+      de Vest⁠, care a avut loc între 6 aprilie și 7 iunie 1945. Forțele navale și amfibii americane s-au îndreptat și
+      ele spre Japonia, cucerind Iwo Jima prin martie și Okinawa până la sfârșitul lunii iunie. În același timp,
+      submarinele americane au întrerupt⁠ importurile japoneze, reducând drastic capacitatea Japoniei de a-și
+      aproviziona forțele de peste mări.
+
+      La 11 iulie, liderii Aliați s-au întâlnit la Potsdam, Germania. Ei au confirmat acordurile anterioare despre
+      Germania, și au reiterat cererea de capitulare necondiționată a tuturor forțele japoneze, în special afirmând că
+      „alternativa pentru Japonia este distrugerea imediată și totală”. În timpul acestei conferințe, au avut loc
+      alegeri generale în Regatul Unit⁠, și Clement Attlee l-a înlocuit pe Churchill ca prim-ministru.
+
+      Aliații au cerut capitularea necondiționată a Japoniei în Declarația de la Potsdam⁠ din 27 iulie, dar guvernul
+      Japonez a respins apelul. La începutul lunii august, USAAF a aruncat bombe atomice asupra orașelor japoneze
+      Hiroshima și Nagasaki. Aliații au justificat bombardamentele atomice ca o necesitate militară, pentru a evita
+      invadarea insulelor Japoneze⁠, care ar fi costat viețile a între 250.000–500.000 de militari aliați și a milioane
+      de soldați și civili japonezi. Între cele două atentate, în conformitate cu acordul de la Ialta, sovieticii au
+      invadat Manciuria ocupată de japonezi și au învins rapid Armata Kwantung⁠, cea mai mare forță combatantă japoneză.
+      Armata Roșie a capturat și Insula Sahalin, și Insulele Kurile. Pe 15 august 1945, Japonia a capitulat, actul
+      capitulării fiind semnat în cele din urmă pe puntea vasului american de război USS Missouri, la 2 septembrie 1945,
+      ceea ce a pus capăt războiului.
+    </p>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .bottom-left {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+      }
+
+      .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+      }
+
+      .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+      }
+
+      .bottom-right {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg/220px-Yalta_Conference_%28Churchill%2C_Roosevelt%2C_Stalin%29_%28B%26W%29.jpg"
+        style="width:50%;">
+      <div class="centered">Conferința de la Ialta a avut loc în februarie 1945, între Winston Churchill, Franklin D.
+        Roosevelt și Iosif Stalin</div>
+    </div>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Shigemitsu-signs-surrender.jpg/220px-Shigemitsu-signs-surrender.jpg"
+        style="width:50%;">
+      <div class="centered">Ministrul de externe Mamoru Shigemitsu semnează actul capitulării Japoniei la bordul USS
+        Missouri, 2 septembrie 1945</div>
+    </div>
+
+    <div class="container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Reichstag_after_the_allied_bombing_of_Berlin.jpg/220px-Reichstag_after_the_allied_bombing_of_Berlin.jpg"
+        style="width:50%;">
+      <div class="centered">Reichstagul german după capturarea sa de către Aliați, la 3 iunie 1945</div>
+    </div>
+
+
+  </div>
+
+  <script>
+    function openPage(pageName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+
+</body>
+
+</html>

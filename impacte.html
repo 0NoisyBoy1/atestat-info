@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Impacte</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    font-family: "Lato", sans-serif;
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {
+      padding-top: 15px;
+    }
+
+    .sidebar a {
+      font-size: 18px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Acasa</a>
+    <a href="despre.html">Despre</a>
+    <a href="cursul-razboiului.html">Cursul Razboiului</a>
+    <a href="impacte.html">Impacte</a>
+    <a href="urmari.html">Urmari</a>
+    <a href="quizz.html">Quizz</a>
+  </div>
+
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ Meniu</button>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial;
+    }
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+  </style>
+  </head>
+
+  <body>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Victime și crime de război')">Victime și crime de
+        război</button>
+      <button class="tablinks"
+        onclick="openCity(event, 'Lagărele de concentrare, munca forțată și genocidele')">Lagărele de concentrare, munca
+        forțată și genocidele</button>
+      <button class="tablinks" onclick="openCity(event, 'Ocupațiile')">Ocupațiile</button>
+      <button class="tablinks" onclick="openCity(event, 'Frontul intern și producția')">Frontul intern și
+        producția</button>
+      <button class="tablinks" onclick="openCity(event, 'Progresele în tehnologie și tehnica de război')">Progresele în
+        tehnologie și tehnica de război</button>
+    </div>
+
+    <div id="Victime și crime de război" class="tabcontent">
+      <h3>Victime și crime de război</h3>
+      <p>Estimările numărului total de victime ale războiului sunt diferite, deoarece multe decese au rămas
+        neînregistrate. Cele mai multe sugerează că au murit aproximativ 60 de milioane de oameni în război, dintre care
+        aproximativ 20 de milioane de militari⁠ și 40 de milioane de civili. Mulți dintre civili au murit din cauza
+        genocidelor deliberate, a masacrelor, bombardamentelor masive, a bolilor și foametei⁠.
+
+        Uniunea Sovietică a pierdut aproximativ 27 de milioane de oameni în timpul războiului, dintre care 8,7 milioane
+        de militari și 19 milioane de civili morți. Cea mai mare parte din militarii morți au fost 5,7 milioane de
+        etnici ruși, urmat de 1,3 milioane de etnici ucraineni. Un sfert din populația Uniunii Sovietice a fost rănită
+        sau ucisă. Germania a suferit pierderea a 5,3 milioane de oameni în luptă, mai ales pe Frontul de Est și în
+        timpul ultimei bătălii din Germania.
+
+        Din numărul total de decese în al Doilea Război Mondial, aproximativ 85%—cea mai mare parte sovietici și
+        chinezi—au fost de partea Aliaților și 15% au fost de partea Axei. Multe dintre aceste decese au fost cauzate de
+        crime de război comise de forțele germane⁠ și de cele japoneze⁠ în teritoriile ocupate. Între 11 și 17 milioane
+        de civili au murit ca urmare, fie directăm fie indirectă, a politicilor ideologice naziste, intre care genocidul
+        sistematic a aproximativ 6 milioane de evrei în Holocaust, împreună cu încă 5 până la 6 milioane de etnici
+        polonezi și alți slavi (inclusiv ucraineni și belaruși)—romi, homosexuali⁠, și alte grupuri etnice și
+        minoritare. Sute de mii (estimări diferite) de etnici sârbi, împreună cu romi și evrei, au fost uciși de Ustașii
+        aliniați cu Axa în Iugoslavia, iar după ce s-a încheiat războiul s-au comis și crime de răzbunare⁠.
+
+        În Asia și Pacific, între 3 milioane și peste 10 milioane de civili, cea mai mare parte chinezi (circa 7,5
+        milioane), au fost uciși de către forțele de ocupație japoneze. Cea mai cunoscută atrocitate japoneză a fost
+        masacrul de la Nanking, în care între cincizeci și trei sute de mii de civili chinezi au fost violați și uciși.
+        Mitsuyoshi Himeta a raportat că Sankō Sakusen⁠ a făcut 2,7 milioane de victime. Generalul Yasuji Okamura⁠ a pus
+        această politică în aplicare în Heipei și Shantung.
+
+        Forțele Axei au utilizat arme biologice și chimice. Armata Imperială Japoneză a folosit diverse astfel de arme
+        în timpul invaziei și ocupației Chinei (vezi Unitatea 731) și la începutul conflictelor cu sovieticii. Atât
+        germanii, cât și japonezii au testat⁠ astfel de arme împotriva civililor și, uneori, pe prizonierii de război.
+
+        Uniunea Sovietică a fost responsabilă pentru masacrul de la Katyn a 22.000 de ofițeri polonezi, și cu
+        încarcerarea sau executarea a mii de deținuți politici de către NKVD, în statele Baltice, Polonia de est⁠, și
+        Basarabia ocupate de către Armata Roșie.
+
+        Bombardarea masivă a zonelor civile, în special în orașele Varșovia⁠, Rotterdam și Londra; inclusiv atacurile
+        aeriene asupra spitalelor și a refugiaților de către aviația germană, împreună cu bombardarea orașului Tokyo⁠,
+        și a orașelor germane Dresda, Hamburg⁠ și Köln⁠ de către Aliații Occidentali pot fi considerate crime de război.
+        Acestea din urmă au dus la distrugerea a peste 160 de orașe și la moartea a peste 600.000 de civili germani. Cu
+        toate acestea, la acea dată nu exista nicio legislație internațională umanitară explicită⁠ sau măcar cutumiară⁠
+        cu privire la războiul aerian.</p>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <div class="container">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/World_War_II_Casualties2.svg/425px-World_War_II_Casualties2.svg.png"
+          width="960" height="760">
+        <div class="text-block">
+          <p>Numărul morților în al Doilea Război Mondial</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Lagărele de concentrare, munca forțată și genocidele" class="tabcontent">
+      <h3>Lagărele de concentrare, munca forțată și genocidele</h3>
+      <p>Guvernul german condus de Adolf Hitler și de Partidul Nazist a fost responsabil pentru Holocaust, uciderea a
+        aproximativ 6 milioane de evrei, precum și a 2,7 milioane de etnici polonezi⁠, și a 4 milioane de oameni care
+        erau considerați „nedemni de viață⁠” (inclusiv persoane cu handicap și bolnavi mintal, prizonieri de război
+        sovietici⁠, homosexuali, masoni, martori ai lui Iehova, si romi) ca parte dintr-un program deliberat de
+        exterminare. Aproximativ 12 milioane de oameni, dintre care majoritatea erau est-europeni⁠, au fost folosiți în
+        economia de război germană ca sclavi⁠.
+
+        În plus față de lagărele de concentrare naziste, gulagurile (lagărele de muncă) sovietice a dus la moartea
+        multor cetățeni din țările ocupate, cum ar fi Polonia, Lituania, Letonia, și Estonia, precum și a prizonierilor
+        de război germani și chiar a unor cetățeni sovietici care erau suspectați a fi susținători ai naziștilor.
+        Șaizeci la sută dintre prizonierii de război sovietici luați de germani⁠ au murit în timpul războiului. Richard
+        Overy⁠ dă un număr de 5,7 milioane de prizonieri sovietici. Din aceștia, 57% au murit sau au fost uciși, un
+        total de 3,6 milioane. Foștii prizonieri de război și civili repatriați sovietici au fost tratați cu mare
+        suspiciune ca potențiali colaboratori ai naziștilor, iar unii dintre ei au fost trimiși în Gulag după ce au fost
+        verificați de către NKVD.
+
+        Lagărele de prizonieri de război japoneze, dintre care multe au fost folosite ca lagăre de muncă forțată, aveau
+        și ele o rată ridicată a mortalității. Tribunalul Militar Internațional pentru Extremul Orient⁠ a găsit rata de
+        decese a prizonierilor occidentali la 27,1% (pentru prizonierii de război americani, 37%), de șapte ori mai mare
+        ca a celor căzuți prizonieri la germani și italieni. În timp ce 37.583 prizonieri din Regatul Unit, 28.500 din
+        Țările de Jos, și 14.473 din Statele Unite ale Americii au fost eliberați după capitularea Japoniei, numărul
+        chinezilor eliberați a fost de doar 56.
+
+        Potrivit istoricului Zhifen Ju, cel puțin cinci milioane de civili chinezi din China de Nord și Manchukuo au
+        fost înrobiți între 1935 și 1941 de către Consiliul de Dezvoltare a Asiei de Est⁠, sau Kōain, pentru a lucra în
+        mine și în industria de război. După 1942, numărul ajunsese la 10 milioane. Biblioteca Congresului SUA estimează
+        că în Java, între 4 și 10 milioane de Romusha⁠ (din japoneză: „muncitori necalificați”), au fost puși la muncă
+        de armata japoneză. Aproximativ 270.000 din acești muncitori din Java au fost trimiși în alte teritorii ocupate
+        de japonezi în Asia de Sud-Est, și numai 52.000 au mai fost repatriați în Java.
+
+        La 19 februarie 1942, Roosevelt a semnat Ordinul Executiv 9066⁠, prin care aproximativ 100.000 de japonezi care
+        trăiau pe Coasta de Vest erau internați. Canada a avut un program similar. În plus, 14.000 de cetățeni germani
+        și italieni, care au fost evaluați ca reprezentând riscuri de securitate au fost și ei internați.
+
+        În conformitate cu acordul aliat de la Conferința de la Ialta, milioane de prizonieri de război și civili au
+        fost folosiți ca muncă forțată de către Uniunea Sovietică⁠. În cazul Ungariei, cetățeni maghiari au fost forțați
+        să muncească pentru Uniunea Sovietică⁠ până în 1955.</p>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        .container {
+          position: relative;
+          font-family: Arial;
+        }
+
+        .text-block {
+          position: absolute;
+          bottom: 20px;
+          right: 20px;
+          background-color: black;
+          color: white;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      </style>
+      <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Chinese_civilians_to_be_buried_alive.jpg"
+          style="width:100%;">
+        <div class="text-block">
+          <p>Civili chinezi îngropați de vii de către soldații Armatei Imperiale Japoneze, în masacrul de la Nanking,
+            decembrie 1937</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="Ocupațiile" class="tabcontent">
+      <h3>Ocupațiile</h3>
+      <p>În Europa, ocupația a venit sub două forme. În Europa de Vest, Nord și Centrală (Franța, Norvegia, Danemarca,
+        Țările de Jos, și teritoriile anexate din Cehoslovacia), Germania a hotărât politici economice prin care erau
+        colectate aproximativ 69,5 miliarde reichmarks⁠ (27,8 miliarde dolari SUA) până la sfârșitul războiului, cifră
+        ce nu include considerabilul jaf⁠ al produselor industriale, echipamentelor militare, materiilor prime și altor
+        bunuri. Astfel, veniturile provenite de la națiunile ocupate a fost de peste 40% din venitul colectat de
+        Germania din impozite, cifră care a crescut la aproape 40% din venitul total mai spre sfârșitul războiului.
+
+        În est, mult sperata răsplată a Lebensraumului nu a fost niciodată obținută din cauza frontului fluctuant și a
+        politicilor pământului pârjolit practicate de sovietici, care i-au privat pe invadatorii germani de resurse.
+        Spre deosebire de Occident, politica rasială nazistă⁠ a încurajat brutalități extreme împotriva a ceea ce era
+        considerat a fi „oameni inferiori⁠” de origine slavă; cele mai multe înaintări germane au fost, astfel, urmate
+        de execuții în masă⁠. Deși s-au format grupuri de rezistență în majoritatea teritoriilor ocupate, ele nu au
+        împiedicat în mod semnificativ operațiunile germane nici în est și nici în vest până la sfârșitul anului 1943.
+
+        În Asia, Japonia declara națiunile aflate sub ocupație ca fiind parte din Sfera de Co-Prosperitate Asia
+        Răsăriteană Mare⁠, în esență, o hegemonie japoneză, al cărui scop era, chipurile, eliberarea popoarelor
+        colonizate. Deși forțele japoneze au fost inițial salutate ca eliberatori de sub dominația europeană în unele
+        teritorii, brutalitatea excesivă a transformat opinia publică locală împotriva lor în câteva săptămâni. În
+        timpul cuceririi inițiale, Japonia a capturat 4.000.000 barili (640.000 m3) de petrol (~5.5×105 tone) lăsate în
+        urmă de retragerea forțelor Aliaților, și, până în 1943, a reușit să obțină în Indiile Olandeze de Est o
+        producție de până la 50 de milioane de barili (~6.8×105 t), 76% față de producția din 1940.</p>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        .container {
+          position: relative;
+          font-family: Arial;
+        }
+
+        .text-block {
+          position: absolute;
+          bottom: 15px;
+          right: 15px;
+          background-color: black;
+          color: white;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      </style>
+      <div class="container">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Palmiry_before_execution.jpg/220px-Palmiry_before_execution.jpg"
+          alt="Nature" style="width:70%;">
+        <div class="text-block">
+          <p>Civili polonezi legați la ochi fotografiați chiar înainte de a fi executați de către soldații germani în
+            pădurea Palmiry⁠, 1940</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="Frontul intern și producția" class="tabcontent">
+      <h3>Frontul intern și producția</h3>
+      <p>În Europa, înainte de izbucnirea războiului, Aliații aveau avantaje semnificative atât demografice, cât și
+        economice. În 1938, Aliații Occidentali (Regatul Unit, Franța, Polonia și Dominioanele Britanice) aveau o
+        populație cu 30% mai mare și un produs intern brut cu 30% mai mare decât țările europene ale Axei (Germania și
+        Italia); dacă se includ și coloniile, atunci Aliații au un avantaj de 5:1 ca populație și de aproape 2:1 ca PIB.
+        În Asia, în același timp, China avea de aproximativ șase ori mai mulți locuitori ca Japonia, dar un PIB cu numai
+        89% mai mare; dacă se includ și coloniile japoneze, acesta se reduce la triplul populației și un PIB cu doar 38%
+        mai mare.
+
+        Deși avantajele economice și demografice ale Aliaților au fost diluate în mare măsură în timpul atacurilor
+        inițiale rapide blitzkrieg ale Germaniei și Japoniei, ele au devenit un factor decisiv în 1942, după ce Statele
+        Unite și Uniunea Sovietică s-au alăturat Aliaților, iar războiul a devenit unul de uzură. În timp ce capacitatea
+        Aliaților de a produce mai mult decât Axa este adesea atribuită accesului mai favorabil al acestora la resurse
+        naturale, au contribuit și alți factori, cum ar fi reticența Germaniei și Japoniei de a angaja femei în forța de
+        muncă⁠, bombardamentele strategice ale Aliaților, și trecerea târzie a Germaniei la o economie de război⁠. În
+        plus, nici Germania, și nici Japonia nu au planificat să lupte un război prelungit, și nu au fost echipate să
+        facă acest lucru. Pentru a-și îmbunătăți producția, Germania și Japonia au folosit milioane de sclavi; Germania
+        a folosit⁠ aproximativ 12 milioane de oameni, majoritatea din Europa de Est, în timp ce Japonia a folosit⁠ peste
+        18 de milioane de oameni din Asia de Sud-Est.</p>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        .container {
+          position: relative;
+          font-family: Arial;
+        }
+
+        .text-block {
+          position: absolute;
+          bottom: 15px;
+          right: 15px;
+          background-color: black;
+          color: white;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      </style>
+
+      <div class="container">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/WorldWarII-GDP-Relations-Allies-Axis-simple.svg/1280px-WorldWarII-GDP-Relations-Allies-Axis-simple.svg.png"
+          alt="Nature" style="width:100%;">
+        <div class="text-block">
+          <p>Raportul între PIB-ul Aliaților și cel al Axei</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="Progresele în tehnologie și tehnica de război" class="tabcontent">
+      <h3>Progresele în tehnologie și tehnica de război</h3>
+      <p>Aeronavele au fost folosite pentru recunoaștere, ca avioane de vânătoare, ca bombardiere, și pentru susținerea
+        operațiunilor de la sol, fiecare rol fiind considerabil dezvoltat. Printre inovații s-au numărat podul aerian⁠
+        (capacitatea de a efectua rapid transporturi prioritare de provizii, echipamente și personal); și
+        bombardamentele strategice⁠ (bombardarea centrelor industriale și demografice ale inamicului pentru a-i distruge
+        capacitatea de a duce războiul). Armamentul antiaerian⁠ a progresat și el, inclusiv capacitatea de apărare, cum
+        ar fi radarul și artileria sol-aer, cum ar fi tunul german antiaerian de 88 mm. S-a pionierat utilizarea de
+        avioane cu reacție și, deși a fost introdusă cu întârziere și a avut un impact direct redus, a făcut ca
+        avioanele cu reacție să devină standardul forțelor aeriene în întreaga lume.
+
+        S-au făcut progrese în aproape fiecare aspect al războiului naval, mai ales cu portavioane și submarine. Deși
+        războiul aeronautic a avut un succes relativ redus la începutul războiului, acțiunile de la Taranto⁠, Pearl
+        Harbor, și din Marea de Corali au făcut din portavion tipul dominant de navă în locul navei de război.
+
+        În Atlantic, portavioanele de escortă⁠ s-au dovedit a fi o parte vitală a convoaielor Aliaților, crescând raza
+        de protecție efectivă și ajutând la închiderea golului din mijlocul Atlanticului⁠. Portavioanele erau și mai
+        economice decât navele de luptă din cauza costului relativ scăzut al aeronavelor și a faptului că nu era nevoie
+        să fie la fel de puternic blindate. Importanța submarinelor, care s-au dovedit a fi o armă eficientă în timpul
+        Primului Război Mondial, au fost anticipată de toate părțile pentru cel de-al Doilea. Britanicii și-au
+        concentrat dezvoltarea pe tactici și arme antisubmarin⁠, cum ar fi sonarul și convoaiele, în timp ce Germania
+        s-a concentrat pe îmbunătățirea capacității ofensive, cu proiecte cum ar fi submarinul de tip VII și tacticile
+        haitei de lupi. Treptat, îmbunătățirea tehnologiilor Aliaților, cum ar fi farurile Leigh⁠, ariciul⁠, squid⁠, și
+        torpilele de localizare⁠ s-au dovedit victorioase.
+
+        Războiul terestru s-a transformat de la fronturile statice ale Primului Război Mondial la o mobilitate crescută
+        și arme combinate⁠. Tancul, care a fost utilizat în principal pentru sprijinul infanteriei în Primul Război
+        Mondial, a evoluat într-o armă primară. La sfârșitul anilor 1930, designul tancurilor era mult mai avansată
+        decât a fost în timpul Primului Război Mondial, și progresele au continuat de-a lungul războiului⁠ cu creșteri
+        ale vitezei, blindajului și puterii de foc.
+
+        La începutul războiului, cei mai mulți comandanți credeau că tancurile inamice ar trebui să fie întâmpinate cu
+        tancuri cu specificații superioare. Această idee a fost contestată de performanța slabă tunurilor relativ ușoare
+        de pe tancuri împotriva blindajelor, și de doctrina germană de evitare a luptelor tanc contra tanc. Acest lucru,
+        împreună cu utilizarea armelor combinate de către Germania, au fost printre elementele-cheie ale succesului
+        tacticii blitzkrieg în Polonia și Franța. S-au utilizat multe mijloace de distrugere a tancurilor⁠, inclusiv
+        artileria indirectă, tunurile anti-tanc (atât tractate cât și autopropulsate), minele, armele antitanc de
+        infanterie cu rază scurtă de acțiune, și alte tancuri. Chiar și mecanizarea pe scară largă, infanteria a rămas
+        coloana vertebrală a tuturor forțelor și, de-a lungul războiului, majoritatea infanteriștilor au fost echipați
+        similar cu cei din Primul Război Mondial.
+
+        Mitralierele portabile s-au răspândit, un exemplu notabil fiind MG34 german, și diversele pistoale-mitralieră,
+        adaptate pentru lupta de aproape⁠, în junglă și în mediul urban. Pușca de asalt, o apariție a sfârșitului
+        războiului, care încorporează multe caracteristici ale puștii și pistoalelor-mitralieră, a devenit arma de
+        infanterie standard post-belică pentru majoritatea forțelor armate.
+
+        Majoritatea beligeranților importanți au încercat să rezolve problemele de complexitate și de securitate
+        implicate în utilizarea de liste de coduri⁠ pentru criptografie prin proiectarea de mașini de cifrare⁠, cea mai
+        cunoscută fiind mașina germană Enigma. Dezvoltarea sigint⁠ (signals intelligence) și a criptanalizei a permis
+        dezvoltarea contracarării procesului de decriptare. Exemple notabile au fost decriptare de către Aliați a
+        codurilor navale japoneze⁠ și metoda britanică Ultra⁠, o tehnică inovatoare de decodare a mașinilor Enigma care
+        a profitat de informațiile oferite Regatului Unit de către Biroul Polonez de Cifruri⁠, care decodase primele
+        versiuni ale mașinii Enigma înainte de război. Un alt aspect al informațiilor militare⁠ a fost dezinformarea, pe
+        care Aliații au folosit-o cu succes, de exemplu în operațiunile Mincemeat⁠ și Bodyguard⁠. Printre alte provocări
+        tehnologice și inginerești din timpul războiului sau apărute ca urmare a lui se numără primele calculatoare
+        programabile (Z3, Colos, și ENIAC), rachetele ghidate și rachetele moderne, dezvoltarea de către Proiectul
+        Manhattan a armelor nucleare, cercetarea operațională⁠ și dezvoltarea de porturi artificiale și conducte de
+        petrol de sub Canalul Mânecii⁠.</p>
+
+      <div class="container">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Bundesarchiv_Bild_141-1880%2C_Peenem%C3%BCnde%2C_Start_einer_V2.jpg"
+          width="660" height="545">
+        <div class="text-block">
+          <p>O rachetă V-2 lansată de pe punct fix în Peenemünde, 1943</p>
+        </div>
+      </div>
+
+    </div>
+
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+
+  </body>
+
+</html>

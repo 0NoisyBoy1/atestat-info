@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .openbtn:hover {
+            background-color: #444;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Acasa</a>
+        <a href="despre.html">Despre</a>
+        <a href="cursul-razboiului.html">Cursul Razboiului</a>
+        <a href="impacte.html">Impacte</a>
+        <a href="urmari.html">Urmari</a>
+        <a href="quizz.html">Quizz</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Meniu</button>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+    <style>
+        body {
+            font-size: 20px;
+            font-family: sans-serif;
+            color: #333;
+        }
+
+        .question {
+            font-weight: 600;
+        }
+
+        .answers {
+            margin-bottom: 20px;
+        }
+
+        #submit {
+            font-family: sans-serif;
+            font-size: 20px;
+            background-color: #297;
+            color: #fff;
+            border: 0px;
+            border-radius: 3px;
+            padding: 20px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        #submit:hover {
+            background-color: #3a8;
+        }
+    </style>
+
+    <div id="quiz"></div>
+    <button id="submit">Rezultate</button>
+    <div id="results"></div>
+
+    <script>
+
+        var myQuestions = [
+            {
+                question: "Al doilea razboi mondial a avut loc intre anii...",
+                answers: {
+                    a: '1939 si 1945',
+                    b: '1914 si 1918',
+                    c: '1941 si 1944',
+                },
+                correctAnswer: 'a'
+            },
+            {
+                question: "Planul pentru scoaterea Frantei din razboi a purtat, in strategia germana numele de cod... ",
+                answers: {
+                    a: 'PLanul alb',
+                    b: 'Planul galben',
+                    c: 'Planul leul de mare',
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: "Statul care a folosit bomba atomica, in al doilea razboi mondial, asupra japoniei a fost...  ",
+                answers: {
+                    a: 'SUA',
+                    b: 'URSS',
+                    c: 'Germania',
+                },
+                correctAnswer: 'a'
+            },
+            {
+                question: "Polonia a fost atacata de catre Germania nazista pe data de...  ",
+                answers: {
+                    a: '1 iunie 1920',
+                    b: '1 septembrie 1939',
+                    c: '25 decembrie 1945',
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: "URSS a fost atacata de catre Germania nazista si aliatii sai pe data de...  ",
+                answers: {
+                    a: '1 martie 2019',
+                    b: '4 iulie 1940',
+                    c: '22 iunie 1941',
+                },
+                correctAnswer: 'c'
+            },
+            {
+                question: "Auschwitz a fost cel mai mare lagar de exterminare din...  ",
+                answers: {
+                    a: 'al Doilea Razboi Mondial',
+                    b: 'vremea interbelica',
+                    c: 'Primul Razboi Mondial',
+                },
+                correctAnswer: 'a'
+            },
+            {
+                question: "Pentru mentinerea pacii si organizarea postbelica a lumii, pe 26 iunie 1945, la San Francisco s-a construit...  ",
+                answers: {
+                    a: 'cina cea de taina',
+                    b: 'Organizatia Natiunilor Unite',
+                    c: 'planul Barbossa',
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: "Prin contribuitia s-a la infrangerea fascismului(1944-1945), Romania se situeaza pe locul al ...  ",
+                answers: {
+                    a: 'V-lea',
+                    b: 'II-lea',
+                    c: 'IV-lea',
+                },
+                correctAnswer: 'a'
+            },
+            {
+                question: "In septembrie 1940, alianta statelor agresoare este consolidata prin semnarea ''Pactului Tripartit''.  ",
+                answers: {
+                    a: 'DA',
+                    b: 'NU',
+                },
+                correctAnswer: 'a'
+            },
+            {
+                question: " In octombrie 1940, la Moscova, I.V.Stalin si W.Churchill au semnat acordul procentajelor privind impartirea Europei la Est si Sud-Est in sfere de influenta .",
+                answers: {
+                    a: 'NU',
+                    b: 'DA',
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: " Actul de la 23 august 1944 a marcat inceputul sovietizarii Romaniei. ",
+                answers: {
+                    a: 'NU',
+                    b: 'DA',
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: " Romania a primit statutul de cobeligeranta la Tratatul de pace de la Paris, 1947 .",
+                answers: {
+                    a: 'DA',
+                    b: 'NU',
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: " Pentru Romania, participarea la al Doilea Razboi Mondial s-a incheiat pe 12 mai 1945. ",
+                answers: {
+                    a: 'DA',
+                    b: 'NU',
+                },
+                correctAnswer: 'a'
+            },
+            {
+                question: "Pactul Molotov-Ribbentrop a fost semnat la data de...  ",
+                answers: {
+                    a: '23 august 1939',
+                    b: '23 august 1938',
+                    c: '23 august 1940',
+                },
+                correctAnswer: 'a'
+            },
+            {
+                question: "Pactul Molotov-Ribbentrop a fost intocmit intre ...",
+                answers: {
+                    a: 'URSS si Romania',
+                    b: 'Germania si URSS',
+                    c: 'USA si Japonia',
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: "Elvetia era o tara... ",
+                answers: {
+                    a: 'aliata cu Puterile Axei',
+                    b: 'neutra',
+                    c: 'aliata cu Puterile Aliaților',
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: "Spania era o tara... ",
+                answers: {
+                    a: 'aliata cu Puterile Axei',
+                    b: 'neutra',
+                    c: 'aliata cu Puterile Aliaților',
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: "Anglia era o tara... ",
+                answers: {
+                    a: 'aliata cu Puterile Axei',
+                    b: 'neutra',
+                    c: 'aliata cu Puterile Aliaților',
+                },
+                correctAnswer: 'c'
+            },
+            {
+                question: "Se estimeaza ca Al Doilea Razboi Mondial a costat... ",
+                answers: {
+                    a: '500 de miliarde de dolari',
+                    b: '1.000 de miliarde de dolari',
+                    c: '2.000 de miliarde de dolari',
+                },
+                correctAnswer: 'b'
+            },
+            {
+                question: "Acest razboi a provocat moartea a... ",
+                answers: {
+                    a: '2% din populatia lumii',
+                    b: '2.5% din populatia lumii',
+                    c: '3% din populatia lumii',
+                },
+                correctAnswer: 'c'
+            },
+            {
+                question: "In Europa, razboiul s-a incheiat la... ",
+                answers: {
+                    a: '8 mai 1945',
+                    b: '18 iunie 1945',
+                    c: '18 mai 1944',
+                },
+                correctAnswer: 'a'
+            },
+            {
+                question: "Planul Marshall a fost incheiat la... ",
+                answers: {
+                    a: '19 iunie 1945',
+                    b: '19 iunie 1946',
+                    c: '19 iunie 1947',
+                },
+                correctAnswer: 'c'
+            },
+
+        ];
+
+
+        var quizContainer = document.getElementById('quiz');
+        var resultsContainer = document.getElementById('results');
+        var submitButton = document.getElementById('submit');
+
+        generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+
+        function generateQuiz(questions, quizContainer, resultsContainer, submitButton) {
+
+            function showQuestions(questions, quizContainer) {
+                // we'll need a place to store the output and the answer choices
+                var output = [];
+                var answers;
+
+                // for each question...
+                for (var i = 0; i < questions.length; i++) {
+
+                    // first reset the list of answers
+                    answers = [];
+
+                    // for each available answer...
+                    for (letter in questions[i].answers) {
+
+                        // ...add an html radio button
+                        answers.push(
+                            '<label>'
+                            + '<input type="radio" name="question' + i + '" value="' + letter + '">'
+                            + letter + ': '
+                            + questions[i].answers[letter]
+                            + '</label>'
+                        );
+                    }
+
+                    // add this question and its answers to the output
+                    output.push(
+                        '<div class="question">' + questions[i].question + '</div>'
+                        + '<div class="answers">' + answers.join('') + '</div>'
+                    );
+                }
+
+                // finally combine our output list into one string of html and put it on the page
+                quizContainer.innerHTML = output.join('');
+            }
+
+
+            function showResults(questions, quizContainer, resultsContainer) {
+
+                // gather answer containers from our quiz
+                var answerContainers = quizContainer.querySelectorAll('.answers');
+
+                // keep track of user's answers
+                var userAnswer = '';
+                var numCorrect = 0;
+
+                // for each question...
+                for (var i = 0; i < questions.length; i++) {
+
+                    // find selected answer
+                    userAnswer = (answerContainers[i].querySelector('input[name=question' + i + ']:checked') || {}).value;
+
+                    // if answer is correct
+                    if (userAnswer === questions[i].correctAnswer) {
+                        // add to the number of correct answers
+                        numCorrect++;
+
+                        // color the answers green
+                        answerContainers[i].style.color = 'lightgreen';
+                    }
+                    // if answer is wrong or blank
+                    else {
+                        // color the answers red
+                        answerContainers[i].style.color = 'red';
+                    }
+                }
+
+                // show number of correct answers out of total
+                resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+            }
+
+            // show questions right away
+            showQuestions(questions, quizContainer);
+
+            // on submit, show results
+            submitButton.onclick = function () {
+                showResults(questions, quizContainer, resultsContainer);
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
